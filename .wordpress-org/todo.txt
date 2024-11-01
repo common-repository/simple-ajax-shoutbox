@@ -1,0 +1,90 @@
+== TODO ==
+
+* bug: if message ends with
+  http://www.youtube.com/watch?
+  then the shoutbox fails
+* status message on successful posting ("Message posted successfully"). Optional
+* následující zpráva udělá link jen z prvního url, kdežto z druhého ne (message id=154989 na ninty.cz):
+  * http://tinypic.com/r/2a6tls5/9\na http://tinypic.com/r/fcnucw/9\n
+* test multisite
+  * https://wordpress.org/support/topic/no-longer-supports-multi-site
+* display links to the site itself like links to WP sites
+  * site name
+  * comments
+  * no url
+* reverse messages list, latest message in the bottom
+	* bad update on ninty.cz, scrolls up a bit in some cases
+* can you please help me with disabling emoticons and website field for non-registred users (when writing the new message)? See https://wordpress.org/support/topic/disable-emoticons-and-website-field-for-non-registred-users?replies=3#post-7713349
+* imgur custom album embed
+  * only album -- single image embed already done
+  * http://imgur.com/a/7EhPS
+* ignore users by id or IP address
+  * accept messages from ignored users, but do not show their posts to other users
+  * still display their own messages to the ignored users, so they do not think they are ignored
+  * add user / IP address to the ignore list from chat front-end
+* Google Photos embed
+  * https://goo.gl/photos/FprVdo7oHLnRZ6KX8
+* embed of facebook groups
+  * example: https://www.facebook.com/groups/1661002004113834
+* na ninty.cz se mi po úvodním nahrání stránky nerozdělí menu (neudělá se tam hr); přitom na testovacím webu to funguje
+* support url http://s.w.org/images/core/emoji/72x72/2764.png for img embed
+  * possibly conflict with texturize changing 72x72 into 72×72 before trying to embed the image
+* photobucket embed
+  * the following url's should convert into image url:
+  * source url: http://rs22.pbsrc.com/albums/b327/Blackskullgreymon/GIFs/WWDance.gif?w=480&h=480&fit=clip
+  * source url: http://s22.photobucket.com/user/Blackskullgreymon/media/GIFs/WWDance.gif.html?w=480&h=480&fit=clip
+  * source url: http://s22.photobucket.com/user/Blackskullgreymon/media/GIFs/WWDance.gif.html
+  * image url: http://i22.photobucket.com/albums/b327/Blackskullgreymon/GIFs/WWDance.gif
+    * on page as Direct url button
+* when fetch failed, notify by (!) icon, do not empty the content of shoutbox
+* support for plugin localization via GlotPress (http://www.separatista.net/wordpress/cestina/preklady-pluginu-a-sablon-pro-wordpress)
+* embed cache not flushing
+* shortcode support to put chat to page/post
+* support multiple chats with id -- usable with putting chat to page/post on certain topic
+* settings to specify whether hyperlinks open in _blank
+* banned phrases support (integrate with existing banned phrases plugin???)
+* move (and remember) message input up or down
+* display chat as dashboard widget
+* enable/disable embeds in widget settings (separate to clickable link setting)
+* na ninty.cz se mi obrázky z rajčete nezobrazují v lightboxu
+* custom youtube embed not working for https://m.youtube.com/watch?v=yo11vp8cd_8
+* embed fb picture url https://www.facebook.com/explosm/photos/a.427422470475.216607.67400590475/10154011863345476/?type=1&theater
+* admin unlimited message length
+* Custom embed Kickstarter -- nejen video, ale také detaily z kampaně
+* redo other embeds (twitter, instagram, tumblr) via WP embed, if possible
+* presence
+  * list of online users, including guests
+* embed http://pasteboard.co/2rsgloNN.jpg
+* zkontrolovat, proč se přidaly ... do tweetu
+  https://twitter.com/nintycz_test/statuses/545942372082003968
+  zpráva je: http://img98.rajce.idnes.cz/d9802/10/10712/10712534_2c4a9882c27627e9dbe980cb46a75b9a/images/10299113_309366319274516_992149534792567402_n.jpg
+* ip addressu ikonou z dashicons; změna na IP obrázek v ninty_helper
+* refactory element class names -- sb_message -> message only, sb_message_header -> header only
+* adjustable height of widget (maybe generic plugin for that)
+  * update css for that -- messages cannot have fixed height
+  * remeber per user, via cookie
+* if including js in head, then read proper settings for script localization
+* menu on top, not hiding into scrolled area
+* WP Minify Fix plugin compatibility
+* do immediate refresh only if cache detected
+* support thickbox (standard WordPress lightbox)
+* compatibility with popular smiley plugins (Tango Smileys Extended, Speedy Smilies, Custom Smilies)
+* embed facebook pictures
+  https://www.facebook.com/ZeldaInformer/photos/a.10150313965571447.337243.101670051446/10152702877956447/?type=1&theater
+* embed facebook message
+  https://www.facebook.com/petrculik/posts/10206601171848431
+* embed facebook album
+  https://www.facebook.com/media/set/?set=a.10152680227695836.1073741857.261836950835&type=1
+* Miiverse embed compatibility
+* chat running on a page (shortcode)
+* expand into large chat via ajax
+* handle errors in add_message by exceptions
+* migrovat data do standardních tabulek WordPressu
+* when scroll locked, indicate new messages (count)
+* search v chatboxu
+* image uploading to Twitter https://dev.twitter.com/rest/public/uploading-media-multiple-photos
+* rajce a další image uploading to Twitter
+* attach (upload) image to message
+* ověřit funčknost na Wii U
+* private messages
+* option to "Like" the message
